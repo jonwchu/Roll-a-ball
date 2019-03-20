@@ -68,11 +68,12 @@ public class PlayerController : MonoBehaviour {
 	// Create a standalone function that can update the 'countText' UI and check if the required amount to win has been achieved
 	void SetCountText()
 	{
+        
 		// Update the text field of our 'countText' variable
 		countText.text = "Count: " + count.ToString ();
 
-		// Check if our 'count' is equal to or exceeded 12
-		if(count > 3)
+        // Check if our 'count' is equal to or exceeded 12
+        if (count == 0)
 		{
 			// Set the text value of our 'winText'
 			winText.text = "You Win!";
